@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+
+<shortcuts>
+
+  <skipIfNotSupported/>
+  
+  <programGroup defaultName="smart-house" location="StartMenu"/>
+  
+  <shortcut
+     name="smart-house"
+     programGroup="yes"
+     desktop="no"
+     applications="no"
+     startMenu="no"
+     startup="no"
+     target="$INSTALL_PATH\start_model.bat"
+     commandLine=""
+     workingDirectory="$INSTALL_PATH"
+     description="Model"
+     iconFile="$INSTALL_PATH\smart-house\icons\model.bmp"
+     iconIndex="0"
+     initialState="noShow">
+     <createForPack name="Model"/>
+  </shortcut>
+  
+  <shortcut
+     name="Documentation"
+     programGroup="yes"
+     desktop="no"
+     applications="no"
+     startMenu="no"
+     startup="no"
+     target="$INSTALL_PATH\smart-house\docs\index.html"
+     commandLine=""
+	 iconFile="%SystemRoot%\system32\SHELL32.dll"
+     iconIndex="23" 
+     workingDirectory="$INSTALL_PATH\docs"
+     description="Model Documentation">
+     <createForPack name="Documentation" />
+  </shortcut>
+  
+  <shortcut
+     name="smart-house Uninstaller"
+     programGroup="yes"
+     desktop="no"
+     applications="no"
+     startMenu="no"
+     startup="no"
+     target="$INSTALL_PATH\Uninstaller\uninstaller.jar"     
+     commandLine=""
+     workingDirectory="$INSTALL_PATH\Uninstaller"
+	 iconFile="%SystemRoot%\system32\SHELL32.dll"
+     iconIndex="31" 
+     description="This Removes the Model">
+     <createForPack name="Model" />
+   </shortcut>
+   
+</shortcuts>
